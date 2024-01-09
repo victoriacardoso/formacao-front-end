@@ -7,9 +7,9 @@ body{
 h3 {
     color: green;
 }
-p{
+/* p{
     color: blueviolet;
-}
+} */
 
 /*CLASSES*/
 
@@ -51,4 +51,56 @@ h2 {
 
 .hex-2 {
     color: #22c448;
+}
+
+.hex-simplificado{
+    color: #333;
+}
+
+.hex-simplificado2{
+    color: #a5f;
+}
+
+.rgb {
+    color: rgb(255, 0,0);
+}
+.mixed-rgb {
+    color: rgb(224, 225, 55);
+}
+
+.rgba {
+    color: rgba(100, 199, 45, .5);
+}
+
+.hsl {
+    color: hsl(50, 30%, 50%);
+}
+
+.hsl-2 {
+    color: hsl(228, 74%, 28%);
+}
+
+.bg {
+    background-color: #000;
+    color: yellow;
+}
+
+.bg-2 {
+    background-color: rgb(78, 80, 110);
+    color: #9b4;
+}
+
+.bg-opacity {
+    background-color: green;
+    opacity: .8
+}
+
+.bg-opacity2 {
+    background-color: red;
+    color: #000
+
+}
+
+.rgba-opacity {
+    background-color: rgba(255, 120, 20, .2);
 }
