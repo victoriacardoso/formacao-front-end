@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--1. Formulários e atributos-->
+    <h2>Formulários HTML</h2>
+    <form action="register.php" method="POST">
+        <div>
+            <label>Nome:</label>
+            <input type="text">
+        </div>
+        
+    <!--2. atributo name (usado para pegar o dado no lado do servidor)-->
+        <div>
+            <label>Idade:</label>
+            <input type="text" name="age">
+        </div>
+    <!--3. atributo for (semântico, mesmo valor do name)-->
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco">
+        </div>
+    <!--5.Select-->
+        <div>
+            <label for="job">Selecione a sua função</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="analista">Analista</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+        <!--6.Selected-->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </div>
+
+        <!--7.Múltiplas opções-->
+        <div>
+            <label for="items">Selecione os itens desejados</label>
+            <select name="items" multiple>
+                <option value="pera">Pêra</option>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="abacate">Abacate</option>
+            </select>
+        </div>
+        
+        <!--8.Text area-->
+        <div>
+            <label for="comment">O que vc achou do software?</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!--9.fieldset e legend-->
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="first-name">Nome:</label>
+                <input type="text" name="first-name">
+                <label for="last-name">Sobrenome:</label>
+                <input type="text" name="last-name">
+            </fieldset>
+        </div>
+
+        <!--10.data list-->
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" name="flavor" list="flavors">
+            <datalist id="flavors">
+                <option value="Morango"></option>
+                <option value="Chocolate"></option>
+                <option value="Açaí"></option>
+            </datalist> 
+        </div>
+
+        <!--11.senha-->
+        <div>
+            <label for="senha">Digite a sua senha</label>
+            <input type="password" name="senha">
+        </div>
+
+        <!--12.resetar form-->
+        <input type="reset" name="reset" value="Limpar">
+        
+        <!--13.radio button-->
+        <div>
+            <label for="car_model">Escolha o modelo do carro</label>
+            <div class="radio">
+                <input type="radio" name="car_model" value="bmw">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="ferrari">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="renault">
+                <label for="renault">Renault</label>
+            </div>
+        </div>
+
+        <!--4.enviando dados do formulário-->
+        <input type="submit" name="save" value="Cadastrar">
+    </form>
+</body>
+</html>
