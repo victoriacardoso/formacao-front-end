@@ -328,3 +328,112 @@ h2 {
 .big {
     font-size: 78px;
 }
+
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #45f;
+    margin: 10px;
+    /* colocar elementos um do lado do outro */
+    display: inline-block;
+}
+.block {
+    background-color: blue;
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+.static {
+    position: static;
+    background-color: #457;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.relative {
+    position: relative;
+    background-color: #764;
+    color: white;
+    width: 100px;
+    height: 100px;
+    /* Não é muito utilizado pois pode atrapalhar os outros elementos no fluxo do html*/
+    top: 100px;
+    left: 40px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: #448;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1, .absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #928;
+    position: absolute;
+}
+.absolute-1 {
+    top: 10px;
+    left: 10px;
+}
+.absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
+
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: #556;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: #888;
+    position: sticky;
+    top: 50px;
+    right: 100px;
+}
+.absolute-3, .absolute-4, .absolute-5 {
+    width: 50px;
+    height: 50px;
+    background-color: #321;
+    position: absolute;
+}
+.absolute-3 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    background-color: #453;
+    z-index: 2;
+
+}
+.absolute-5 {
+    top: 40px;
+    left: 50px;
+    background-color: #886 ;
+}
