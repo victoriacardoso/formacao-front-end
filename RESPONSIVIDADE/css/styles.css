@@ -1,0 +1,30 @@
+h1 {
+    color: red;
+}
+
+/* se a tela tiver um tamanho menor que 500 px, muda a cor*/
+@media screen and (max-width: 500px){
+    h1{
+        color: blue;
+    }
+}
+p {
+    background-color: red;
+    color: #000;
+}
+/* se a tela tiver um tamanho maior que 800 px, muda o background e a cor*/
+@media screen and (min-width: 800px) {
+    p {
+        background-color: #789;
+        color: red;
+    }
+}
+h3 {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h3{
+        display: block;
+    }
+}
